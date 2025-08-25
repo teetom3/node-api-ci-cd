@@ -20,7 +20,10 @@ jobs:
                 node-version: '20.9'
 
             - name: Install dependencies
-              run: npm test
+              run: npm ci
+            
+            - name: Run tests
+              run: npm test  
               
             - name: Trigger Render Deployment
               env:
