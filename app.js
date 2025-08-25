@@ -11,4 +11,9 @@ app.get('/status', (req, res) => {
     res.json({ status : 'API is running'});
 });
 
+
+app.get('/version', (req, res) => {
+    res.json({ version: '1.0.1'})
+});
+
 module.exports = app;
